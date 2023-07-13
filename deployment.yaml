@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: flappy
     spec:
       containers:
-      - image: aaraoz/flappy:latest
+      - image: aaraoz/flappy:main
         imagePullPolicy: Always
         name: flappy
         ports:
