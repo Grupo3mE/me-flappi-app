@@ -4,12 +4,12 @@ pipeline {
 	    stage('Preparando el ambiente') {
 		    steps {
 	    	sh 'ls -l'
-            sh 'rm -r ./k8s-deployment'
+            sh 'rm -r ./me-flappi-app'
             }
 }
         stage('Obteniendo codigo fuente'){
             steps{
-            sh 'git clone https://github.com/alearaoz/k8s-deployment.git'
+            sh 'git clone https://github.com/Grupo3mE/me-flappi-app.git'
         }
 }
         stage('Desplegando la aplicacion'){
