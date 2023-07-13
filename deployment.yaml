@@ -33,7 +33,8 @@ kind: Service
 metadata:
   name: flappy
   namespace: www-public
-  service.beta.kubernetes.io/aws-load-balancer-type: external-nginx
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: external-nginx
 spec:
   type: ClusterIP
   selector:
